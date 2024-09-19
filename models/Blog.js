@@ -4,18 +4,15 @@ const { Schema } = mongoose;
 const blogSchema = new Schema({
   title: {
     type: String,
-    required: true,
   },
   image: {
     type: String,
   },
   description: {
     type: String,
-    required: true,
   },
   author: {
     type: String,
-    required: true,
   },
   date: {
     type: Date,

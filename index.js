@@ -8,7 +8,7 @@ app.use("/api/blog", blogRouter);
 
 // Connect to MongoDB
 mongoose
-  .connect("mongodb://localhost:27017/blog-post", { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect("mongodb://localhost:27017/blog-post")
   .then(() => {
     console.log("Mongoose Connected....");
   })
